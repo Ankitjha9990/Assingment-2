@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .box {
+      padding: 15px;
+      border: 3px solid #857e7e;
+      width: 300px;
+      background-color: #6464f2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h3>Basic Calculator Program</h3>
+    <p>This is a basic JS Calculator Program</p>
+    <p>Check the Result on the Console</p>
+  </div>
+
+  <script>
+    let num1 = Number(prompt("Enter first number:"));
+    let operator = prompt("Enter operator (+, -, *, /):");
+    let num2 = Number(prompt("Enter second number:"));
+    let result;
+
+    if (operator === "+") {
+      result = num1 + num2;
+    } else if (operator === "-") {
+      result = num1 - num2;
+    } else if (operator === "*") {
+      result = num1 * num2;
+    } else if (operator === "/") {
+      result = num1 / num2;
+    } else {
+      result = "Invalid operator";
+    }
+
+    console.log(result);
+  </script>
+
+</body>
+</html>
